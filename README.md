@@ -1,2 +1,2 @@
 # ImgCompressor
-Image compressor python api
+Image compressing using python api
