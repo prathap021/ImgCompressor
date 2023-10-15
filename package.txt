@@ -14,6 +14,7 @@ cryptography==3.4.8
 cupshelpers==1.0
 dbus-python==1.2.18
 defer==1.0.6
+deptry==0.12.0
 distro==1.7.0
 Flask==3.0.0
 Flask-RESTful==0.3.10
@@ -40,6 +41,7 @@ more-itertools==8.10.0
 netaddr==0.8.0
 netifaces==0.11.0
 oauthlib==3.2.0
+pathspec==0.11.2
 pep8==1.7.1
 Pillow==9.5.0
 pop-transition==1.1.2
@@ -70,6 +72,7 @@ sessioninstaller==0.0.0
 six==1.16.0
 systemd-python==234
 toml==0.10.2
+tomli==2.0.1
 typing_extensions==4.8.0
 ubuntu-advantage-tools==8001
 ubuntu-drivers-common==0.0.0
