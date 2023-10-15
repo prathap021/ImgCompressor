@@ -2,7 +2,7 @@ import base64
 import io
 from PIL import Image
 from flask import Flask, jsonify, request
-
+# from django.conf.urls import include
 
 app = Flask(__name__)
 
@@ -60,4 +60,4 @@ def compressMe(image, new_size_ratio, quality, width=None, height=None):
 
 if __name__ == '__main__':
 
-    app.run(debug=True,port=7000)
+    app.run(debug=True)
