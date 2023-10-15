@@ -28,6 +28,13 @@ def compressMe(image, new_size_ratio, quality, width=None, height=None):
 
     pil_image = Image.open(image_bytes)
 
+    width, height, = pil_image.size
+    
+    print(pil_image.size)
+
+    print(f"{width}x{height}")
+
+
     if new_size_ratio > 0.0:
         print("Ratio block called")
 
@@ -43,6 +50,8 @@ def compressMe(image, new_size_ratio, quality, width=None, height=None):
     rgb_im = pil_image.convert("RGB")
 
     rgb_im.save(image_bytes, quality=quality, optimize=True, format='JPEG')
+    image_file_size = image_bytes.tell()
+    print(f"Image size {image_file_size}")
 
     compressed_image = base64.b64encode(image_bytes.getvalue()).decode('utf-8')
 
@@ -51,4 +60,4 @@ def compressMe(image, new_size_ratio, quality, width=None, height=None):
 
 if __name__ == '__main__':
 
-    app.run(debug=True)
+    app.run(debug=True,port=7000)
